@@ -3,12 +3,8 @@ services:
     name: job-ops
     env: docker
     dockerfilePath: Dockerfile
-    plan: starter
+    plan: free
     healthCheckPath: /health
-    disk:
-      name: job-ops-data
-      mountPath: /app/data
-      sizeGB: 1
     envVars:
       - key: PORT
         value: 3001
