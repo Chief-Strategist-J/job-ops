@@ -28,3 +28,4 @@ tmp/
 
 # Virtual environment for Python
 .venv
+.vercel

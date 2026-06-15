@@ -1,4 +1,11 @@
 {
-  "buildCommand": null,
-  "outputDirectory": "orchestrator/dist/client"
+  "buildCommand": "npm --workspace orchestrator run build:client",
+  "outputDirectory": "orchestrator/dist/client",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/((?!api/|pdfs/|stats/).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
